@@ -1,0 +1,35 @@
+
+
+การเอาโค้ดขึ้น GitHub:
+1. `git init` (ถูกต้อง - เริ่มต้น Git repository)
+2. `git add .` (ถูกต้อง - เพิ่มไฟล์ทั้งหมดเข้า staging area)
+3. `git commit -m "พิมว่าทำอะไรอยากบอกอะไร"` (ถูกต้อง - commit การเปลี่ยนแปลง)
+4. `git branch -M master` (ถูกต้อง - เปลี่ยนชื่อ branch เป็น master ถ้าจำเป็น)
+5. `git remote add origin https://github.com/PHATCHARAPHON63/dashboar_diagram.git` (ถูกต้อง - เชื่อมต่อกับ remote repository)
+6. `git push -u origin master` (ถูกต้อง - push โค้ดขึ้น GitHub)
+
+การดึงโค้ดลง:
+สำหรับการดึงโค้ดลงมาใช้ในเครื่องใหม่หรือเครื่องอื่น ขั้นตอนจะแตกต่างออกไป:
+
+1. เปิด Terminal หรือ Command Prompt
+2. ไปยังโฟลเดอร์ที่คุณต้องการเก็บโปรเจค
+3. ใช้คำสั่ง:
+   ```
+   git clone https://github.com/PHATCHARAPHON63/dashboar_diagram.git
+
+   ```
+4. เข้าไปในโฟลเดอร์โปรเจค:
+   ```
+   cd dashboar_diagram
+   ```
+
+หลังจากนั้น คุณสามารถทำงานกับโค้ดได้เลย
+
+การอัปเดตโค้ดในอนาคต:
+เมื่อคุณต้องการอัปเดตการเปลี่ยนแปลงใหม่:
+1. `git add .`
+2. `git commit -m "อธิบายการเปลี่ยนแปลง"`
+3. `git push`
+
+การดึงการเปลี่ยนแปลงล่าสุดจาก GitHub:
+ใช้คำสั่ง `git pull` เมื่อต้องการดึงการเปลี่ยนแปลงล่าสุดจาก GitHub

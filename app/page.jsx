@@ -49,19 +49,19 @@ const LayoutComponent = () => (
   <Box>
     <Grid container item xs={12} spacing={0} sx={{ mt: 2, overflowX: 'auto' }}>
       <Grid item xs={2} />
-      <Grid item xs={4}>
-        <ShelfTable
-          prefix="A01-"
-          count={8}
-          levels={4}
-          bgcolor="#FFFF99"
-          customCells={[
-            ['A01-D01', 'A01-D02', 'A01-D03', 'A01-D04', 'A01-D05', 'A01-D06', 'A01-D07', 'A01-D08'],
-            ['A01-C01', 'A01-C02', 'A01-C03', 'A01-C04', 'A01-C05', 'A01-C06', 'A01-C07', 'A01-C08'],
-            ['A01-B01', 'A01-B02', 'A01-B03', 'A01-B04', 'A01-B05', 'A01-B06', 'A01-B07', 'A01-B08'],
-            ['A01', '', '', '', '', '', '', '']
-          ]}
-        />
+        <Grid item xs={4}>
+          <ShelfTable
+            prefix="A01-"
+            count={8}
+            levels={4}
+            bgcolor="#FFFF33"
+            customCells={[
+              ['A01-D01', 'A01-D02', 'A01-D03', 'A01-D04', 'A01-D05', 'A01-D06', 'A01-D07', 'A01-D08'],
+              ['A01-C01', 'A01-C02', 'A01-C03', 'A01-C04', 'A01-C05', 'A01-C06', 'A01-C07', 'A01-C08'],
+              ['A01-B01', 'A01-B02', 'A01-B03', 'A01-B04', 'A01-B05', 'A01-B06', 'A01-B07', 'A01-B08'],
+              ['A01', '', '', '', '', '', '', '']
+            ]}
+          />
       </Grid>
 
       <Grid item xs={2} />
@@ -73,9 +73,9 @@ const LayoutComponent = () => (
       </Grid>
 
       <Grid item container xs={12} spacing={1} alignItems="flex-start" sx={{ mt: 1 }}>
-        <Grid item xs={3} />
+        <Grid item xs={3.5} />
         <Grid item xs={2}>
-          <Paper elevation={3} sx={{ p: 0.5, bgcolor: 'black', color: 'white', textAlign: 'center' }}>
+          <Paper elevation={2} sx={{ p: 0.5, bgcolor: 'black', color: 'white', textAlign: 'center',height: '50px', width: '100px' }}>
             <Typography variant="caption">โทรทัศน์</Typography>
           </Paper>
         </Grid>
@@ -85,7 +85,7 @@ const LayoutComponent = () => (
             prefix="A02-"
             count={2}
             levels={4}
-            bgcolor="#FFFF99"
+            bgcolor="#FFFF33"
             customCells={[
               ['A02-D01', 'A02-D02'],
               ['A02-C01', 'A02-C02'],
@@ -99,7 +99,7 @@ const LayoutComponent = () => (
       <Grid item container xs={12} spacing={1}>
         <Grid item xs={2} />
         <Grid item xs={4}>
-          <Paper elevation={3} sx={{ p: 1, height: 150, bgcolor: '#808080', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <Paper elevation={3} sx={{ p: 1, height: 150, bgcolor: '#DCDCDC', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <Box display="flex" justifyContent="space-around">
             </Box>
           </Paper>
@@ -112,10 +112,10 @@ const LayoutComponent = () => (
         <Grid container item xs={12} spacing={2}>
           <Grid item xs={1} />
           <Grid item xs={1}>
-            <Paper elevation={3} sx={{ p: 1, mb: 1, bgcolor: '#FF9999' }}>
+            <Paper elevation={3} sx={{ p: 1, mb: 1, bgcolor: '#CC3333' }}>
               <Typography>B01 Cashier</Typography>
             </Paper>
-            <Paper elevation={3} sx={{ p: 1, bgcolor: '#FF9999' }}>
+            <Paper elevation={3} sx={{ p: 1, bgcolor: '#CC3333' }}>
               <Typography>B02 Cashier</Typography>
             </Paper>
           </Grid>
@@ -135,7 +135,7 @@ const LayoutComponent = () => (
                 <Paper elevation={3} sx={{ p: 1, height: 60, mt: 1, bgcolor: '#FFE4B5', border: '2px solid black' }} />
               </Grid>
               <Grid item xs={12} sx={{ mt: 2 }}>
-                <Paper elevation={3} sx={{ p: 1, height: 80, bgcolor: '#FF9999', border: '2px solid black', height: '45px' }}>
+                <Paper elevation={3} sx={{ p: 1, height: 80, bgcolor: '#CC3333', border: '2px solid black', height: '45px' }}>
                   <Typography align="center" variant="h6">เตียงผู้ป่วย</Typography>
                 </Paper>
               </Grid>
@@ -172,7 +172,7 @@ const LayoutComponent = () => (
             prefix="B03-"
             count={2}
             levels={2}
-            bgcolor="#FFFF99"
+            bgcolor="#CC3333"
             customCells={[
               ['B03-B01', 'B03-B02'],
               ['B03-A01', 'B03-A02']
@@ -184,7 +184,7 @@ const LayoutComponent = () => (
             prefix="B04-"
             count={4}
             levels={4}
-            bgcolor="#FFFF99"
+            bgcolor="#CC3333"
             customCells={[
               ['B04-D01', 'B04-D02', 'B04-D03', 'B04-D04'],
               ['B04-C01', 'B04-C02', 'B04-C03', 'B04-C04'],
@@ -199,7 +199,7 @@ const LayoutComponent = () => (
             prefix="C01-"
             count={6}
             levels={4}
-            bgcolor="#FFFF99"
+            bgcolor="#FF9933"
             customCells={[
               ['C01-D01', 'C01-D02', 'C01-D03', 'C01-D04', 'C01-D05', 'C01-D06'],
               ['C01-C01', 'C01-C02', 'C01-C03', 'C01-C04', 'C01-C05', 'C01-C06'],
@@ -213,7 +213,7 @@ const LayoutComponent = () => (
             prefix="D02-"
             count={6}
             levels={4}
-            bgcolor="#FFFF99"
+            bgcolor="#87CEFA"
             customCells={[
               ['D02-D01', 'D02-D02', 'D02-D03', 'D02-D04', 'D02-D05', 'D02-D06'],
               ['D02-C01', 'D02-C02', 'D02-C03', 'D02-C04', 'D02-C05', 'D02-C06'],
@@ -226,24 +226,24 @@ const LayoutComponent = () => (
 
       <Grid container item xs={12} spacing={0} sx={{ mt: 2, overflowX: 'auto', display: 'flex', flexWrap: 'nowrap', minWidth: '2000px' }}>
           <Grid item xs={4}/>
-          <Grid item height="40%">
+          <Grid item height="70%">
             <ShelfTable
               prefix="B05-"
               count={2}
               levels={2}
-              bgcolor="#FF9999"
+              bgcolor="#CC3333"
               customCells={[
                 ['B05-B01', 'B05-B02'],
                 ['B05-A01', 'B05-A02']
               ]}
             />
           </Grid>
-          <Grid item height="40%">
+          <Grid item height="70%">
             <ShelfTable
               prefix="B06-"
               count={2}
               levels={2}
-              bgcolor="#FF9999"
+              bgcolor="#CC3333"
               
               customCells={[
                 ['B06-B01', 'B06-B02'],
@@ -252,12 +252,12 @@ const LayoutComponent = () => (
             />
             
           </Grid>
-          <Grid item sx={{ ml: 2 }} height="70%">
+          <Grid item sx={{ ml: 2 }} height="100%">
             <ShelfTable
               prefix="C02-"
               count={4}
               levels={4}
-              bgcolor="#FFFF99"
+              bgcolor="#FF9933"
               customCells={[
                 ['C02-D01', 'C02-D02', 'C02-D03', 'C02-D04'],
                 ['C02-C01', 'C02-C02', 'C02-C03', 'C02-C04'],
@@ -266,12 +266,12 @@ const LayoutComponent = () => (
               ]}
             />
           </Grid>
-          <Grid item sx={{ ml: 2 }} height="20%">
+          <Grid item sx={{ ml: 2 }} height="40%">
             <ShelfTable
               prefix="D03-"
               count={4}
               levels={1}
-              bgcolor="#ADD8E6"
+              bgcolor="#87CEFA"
               customCells={[
                 ['D03-A01', 'D03-A02', 'D03-A03', 'D03-A04']
               ]}
@@ -283,7 +283,7 @@ const LayoutComponent = () => (
               prefix="D04-"
               count={16}
               levels={6}
-              bgcolor="#dae5f6"
+              bgcolor="#87CEFA"
               customCells={[
                 ['', '', '', '', '', '', '', '', 'D04-F08', '', '', '', '', '', 'D04-F15', 'D04-F16'],
                 ['', '', '', '', '', '', '', '', 'D04-E08', '', '', '', '', '', 'D04-E15', 'D04-E16'],
@@ -295,6 +295,24 @@ const LayoutComponent = () => (
             />
           </Grid>
       </Grid>
+
+      {/* <Grid item xs={2} >
+        <Grid item xs={12} sx={{ mt: 2, pl:  2 }}>
+          <Paper elevation={3} sx={{ p: 1, height: '150px', width: '50px', bgcolor: '#66CCFF', border: '2px solid black', writingMode: 'vertical-rl',  }}>
+            <Typography align="center" variant="h6">เตียงผู้ป่วย</Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} spacing={1} sx={{ mt: 2, pl: 22 }}>
+        <Grid item xs={2} />
+        <Grid item xs={4}>
+          <Paper elevation={2} sx={{ p: 0.5, bgcolor: 'black', color: 'white', textAlign: 'center',height: '50px', width: '100px' }}>
+            <Typography variant="caption">โทรทัศน์</Typography>
+          </Paper>
+        </Grid>
+      </Grid>
+      </Grid> */}
+      
+
     </Grid>
   </Box>
 );
